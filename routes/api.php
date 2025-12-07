@@ -15,3 +15,8 @@ Route::prefix('products')->group(function () {
     Route::put('/{id}', [ProductController::class, 'update']);
     Route::delete('/{id}', [ProductController::class, 'destroy']);
 });
+
+use App\Http\Controllers\PublicProductController;
+
+Route::get('public/products', [PublicProductController::class, 'index']);
+Route::get('public/products/{id}', [PublicProductController::class, 'show']);
