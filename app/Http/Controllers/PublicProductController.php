@@ -14,7 +14,7 @@ class PublicProductController extends Controller
 
     public function show($id)
     {
-        $p = PublicProduct::where('_id', (int)$id)->first(); //puede ser tambien id (tambien no funciona)
+        $p = PublicProduct::where('_id', (int)$id)->first(); //puede ser tambien id (tambien no funciona) , EL INT ES IMPORTANTE
         if(!$p){
             return "no existe";
 
