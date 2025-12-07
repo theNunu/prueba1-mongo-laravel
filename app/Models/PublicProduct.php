@@ -17,6 +17,15 @@ class PublicProduct extends MongoModel
     public $incrementing = false;
     protected $keyType = 'int';
 
+    
+    // protected $casts = [
+    //     '_id' => 'integer',   // <<--- SOLUCIONA EL PROBLEMA
+    //     'stock' => 'integer',
+    //     'price' => 'float',
+    //     'is_active' => 'boolean',
+    // ];
+
+
     protected $fillable = [
         '_id',
         'name',

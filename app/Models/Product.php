@@ -28,7 +28,7 @@ class Product extends Model
             // PublicProduct::create($data);}
             $data = $product->toArray();
             $data['_id'] = $product->product_id;        // <<--- IMPORTANTÍSIMO
-            $data['sqlite_id'] = $product->product_id;
+            // $data['sqlite_id'] = $product->product_id;
             PublicProduct::create($data);
         });
 

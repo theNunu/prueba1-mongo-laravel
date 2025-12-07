@@ -12,10 +12,10 @@ class PublicProductController extends Controller
         return response()->json(PublicProduct::all());
     }
 
-    public function show($sqlite_id)
+    public function show($id)
     {
-        return response()->json(
-            PublicProduct::where('sqlite_id', $sqlite_id)->firstOrFail()
-        );
+
+        $p = PublicProduct::where('_id', (int)$id)->first(); //puede ser tambien id (tambien no funciona)
+         return $p;
     }
 }
