@@ -11,6 +11,10 @@ class SyncSqliteToMongo extends Command
 {
     /*
      *Crear un comando en laravel
+
+     php artisan make:command RegistrationStatus
+     php artisan make:command ElComando  
+
      */
     protected $signature = 'sync:sqlite-mongo'; //ejecutar en terminal : php artisan sync:sqlite-mongo   
 
